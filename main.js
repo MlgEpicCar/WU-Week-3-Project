@@ -1,15 +1,12 @@
 const divFavs = ["Giraffes", "Dogs", "Horses", "Cats", "Birds"];
 const divFear = ["Rhinoceros", "Tiger", "Spider", "Lion", "Shark"];
 
-ul = document.createElement('ul');
-ul.setAttribute("id", "divFavs");
-
-document.getElementById("h1").textContent = `Top Favorite Animals`; // h1
+document.getElementById("h1").textContent = `Top Favorite Animals`;
 
 for (let i = 0; i < 5; i++) {
-    li = document.createElement("li"); // creates list item
-    li.innerText = divFavs[i]; // puts String from array into list item
-    document.getElementById("divFavs").appendChild(li); // appends list item
+    li = document.createElement("li");
+    li.innerText = divFavs[i];
+    document.getElementById("divFavs").appendChild(li);
 }
 
 document.getElementById("h2").textContent = `Top Feared Animals`;
